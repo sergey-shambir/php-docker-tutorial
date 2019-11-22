@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+docker run --rm --interactive --tty \
+    --volume /etc/passwd:/etc/passwd:ro \
+    --volume /etc/group:/etc/group:ro \
+    --user "$(id -u)" \
+    --volume "$PWD":"$PWD" \
+    -w "$PWD" \
+    symfony:dev \
+    symfony "$@"

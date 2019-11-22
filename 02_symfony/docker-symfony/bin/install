@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
+
+set -o errexit
+
+# Install Git and wget
+apt-get -qq update
+apt-get install -y --no-install-recommends git wget
+apt-get -qq clean
+
+# Install composer and symfony
+pushd /usr/local/bin
+"$SCRIPT_DIR/install-composer"
+"$SCRIPT_DIR/install-symfony"
+popd

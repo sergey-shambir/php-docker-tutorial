@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -o errexit
+
+wget https://get.symfony.com/cli/installer -O - | bash
+mv $HOME/.symfony/bin/symfony $PWD/symfony

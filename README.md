@@ -5,3 +5,4 @@
 Инструкции:
 
 * [Установка docker и docker-compose](01_install)
+* [Создание проекта Symfony 4 и Docker-контейнера для него](02_symfony)
