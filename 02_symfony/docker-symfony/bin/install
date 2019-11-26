@@ -12,5 +12,6 @@ apt-get -qq clean
 # Install composer and symfony
 pushd /usr/local/bin
 "$SCRIPT_DIR/install-composer"
+mv composer.phar composer
 "$SCRIPT_DIR/install-symfony"
 popd

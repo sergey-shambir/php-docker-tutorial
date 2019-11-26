@@ -5,6 +5,8 @@ docker run --rm --interactive --tty \
     --volume /etc/group:/etc/group:ro \
     --user "$(id -u)" \
     --volume "$PWD":"$PWD" \
+    --volume "$HOME/.gitconfig:$HOME/.gitconfig:ro" \
+    --mount type=tmpfs,destination=$HOME/.symfony \
     -w "$PWD" \
     symfony:dev \
     symfony "$@"

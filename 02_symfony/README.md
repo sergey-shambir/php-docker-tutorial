@@ -23,11 +23,16 @@
 
 ## Создание проекта
 
-Для запуска symfony из контейнера мы будем использовать скрипт `02_symfony/bin/symfony`, который запускает образ `symfony:dev`
+Для запуска symfony из контейнера мы будем использовать скрипт `02_symfony/bin/symfony`, который запускает образ `symfony:dev`.
 
+Сделайте следующее:
+* Выберите имя нового проекта - например, sandbox
+* Выполните `02_symfony/bin/symfony new sandbox`
 
-TODO
-TODO
-TODO
-TODO
-TODO
+Если не возникнет проблем, утилита выведет:
+
+```
+[OK] Your project is now ready in /home/.../sandbox
+```
+
+Теперь в каталоге `sandbox` у вас есть заготовка проекта на Symfony.
